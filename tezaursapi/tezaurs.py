@@ -4,7 +4,7 @@ import xmltodict
 from .exceptions import *
 import json
 
-class Tezaurs:
+class TezaursAPI:
     """
     Tezaura API ietvars. 
     Nodrošina metodes latviešu valodas vārdu un frāžu analīzei, locīšanai un morfoloģiskai marķēšanai.
