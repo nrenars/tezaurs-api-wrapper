@@ -1,6 +1,6 @@
 # Tezaurs API Wrapper
 
-Tezaurs API Wrapper ir Python bibliotēka, kas ļauj ērti piekļūt [Tezaurs.lv](https://tezaurs.lv/) latviešu valodas vārdnīcas datubāzei caur API. Šī bibliotēka atvieglo vārdu datu meklēšanu.
+Tezaurs API Wrapper ir Python bibliotēka, kas ļauj ērti piekļūt [Tezaurs.lv](https://tezaurs.lv/) latviešu valodas vārdnīcas datubāzei caur API. Šī bibliotēka atvieglo vārdu locījumu, datu, un informācijas meklēšanu.
 
 ## Iespējas
 
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 
 ## Lietošana
 
-Piemērs, kā izmantot API wrapperi Python valodā:
+Piemērs, kā izmantot API wrapperi:
 
 Vārda morfoloģiskās analīzes atgriešana json formātā ar analyze() funkciju:
 ```python
@@ -50,7 +50,6 @@ rezultats = tezaurs.analyze_sentence('Vīrs ar cirvi.')
 print(rezultats)
 ```
 
-
 ### API Metodes
 
 - `analyze(word: str) -> dict`  
@@ -69,12 +68,11 @@ Projekts ir licencēts saskaņā ar MIT licenci. Skatiet [LICENSE](LICENSE) fail
 ## Resursi
 
 - [Tezaurs.lv](https://tezaurs.lv/)
-- [Tezaurs.lv API dokumentācija](https://tezaurs.lv/api)
-- [Issue sekcija](https://github.com/nrenars/tezaurs-api-wrapper/issues)
 
 ---
 
 _Šis projekts nav saistīts ar Tezaurs.lv._
+
 
 
 
