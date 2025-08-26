@@ -29,16 +29,27 @@ pip install -r requirements.txt
 
 ## Lietošana
 
-Vienkāršs piemērs, kā izmantot API wrapperi Python valodā:
+Piemērs, kā izmantot API wrapperi Python valodā:
 
+Vārda morfoloģiskās analīzes atgriešana json formātā ar analyze() funkciju:
 ```python
 from tezaurs_api_wrapper import TezaursAPI
 
 tezaurs = TezaursAPI()
 
-rezultats = tezaurs.search('vārds')
+rezultats = tezaurs.analyze('vārds')
 print(rezultats)
 ```
+Katra teikuma vārda informācijas atgriešana json formātā ar analyze_sentence() funkciju:
+```python
+from tezaurs_api_wrapper import TezaursAPI
+
+tezaurs = TezaursAPI()
+
+rezultats = tezaurs.analyze_sentence('Vīrs ar cirvi.')
+print(rezultats)
+```
+
 
 ### API Metodes
 
@@ -82,4 +93,5 @@ Projekts ir licencēts saskaņā ar MIT licenci. Skatiet [LICENSE](LICENSE) fail
 ---
 
 _Šis projekts nav saistīts ar Tezaurs.lv._
+
 
