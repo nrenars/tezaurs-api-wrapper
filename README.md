@@ -53,32 +53,14 @@ print(rezultats)
 
 ### API Metodes
 
-- `search(word: str) -> dict`  
-  Meklē vārdu Tezaurs.lv vārdnīcā
-- `get_definition(word_id: str) -> dict`  
-  Atgriež konkrētā vārda nozīmes
-- `get_translation(word: str, target_lang: str) -> dict`  
-  Atgriež vārda tulkojumu uz norādīto valodu
-
-## Konfigurācija
-
-Dažām metodēm var būt nepieciešama API atslēga. Lūdzu, skatiet [Tezaurs.lv API dokumentāciju](https://tezaurs.lv/api), lai iegūtu vairāk informācijas.
-
-API atslēgas iestatīšana:
-
-```python
-tezaurs = TezaursAPI(api_key='JŪSU_API_ATSLĒGA')
-```
-
-## Iesaistīšanās
-
-Priecāsimies par jebkādu ieguldījumu! Atveriet issue vai iesniedziet pull request.
-
-1. Forkojiet repozitoriju
-2. Izveidojiet savu branch (`git checkout -b feature/manas-izmainas`)
-3. Veiciet izmaiņas un commitojiet (`git commit -am 'Pievienots jauns funkcionalitāte'`)
-4. Push uz savu branch (`git push origin feature/manas-izmainas`)
-5. Atveriet pull request
+- `analyze(word: str) -> dict`  
+- `analyze_sentence(word_id: str) -> dict`  
+- `inflect(word: str, target_lang: str) -> dict`  
+- `inflect_phrase(word: str, target_lang: str) -> dict`
+- `inflections(word: str, target_lang: str) -> dict`
+- `normalize(word: str, target_lang: str) -> dict`
+- `suitable_paradigm(word: str, target_lang: str) -> dict`
+- `morphotagger()`
 
 ## Licence
 
@@ -93,5 +75,6 @@ Projekts ir licencēts saskaņā ar MIT licenci. Skatiet [LICENSE](LICENSE) fail
 ---
 
 _Šis projekts nav saistīts ar Tezaurs.lv._
+
 
 
