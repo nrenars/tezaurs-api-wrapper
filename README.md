@@ -17,14 +17,10 @@ Tezaurs API Wrapper ir Python bibliotēka, kas ļauj ērti piekļūt [Tezaurs.lv
 - API pieprasījumu un atbilžu apstrāde ar kļūdu apstrādi
 - Paplašināma dažādiem pielietojumiem
 
-## Uzstādīšana
-
-Klonējiet šo repozitoriju un instalējiet dependencies:
+## Instalēšana
 
 ```bash
-git clone https://github.com/nrenars/tezaurs-api-wrapper.git
-cd tezaurs-api-wrapper
-pip install -r requirements.txt
+pip install tezaursapi
 ```
 
 ## Lietošana
@@ -72,6 +68,7 @@ Projekts ir licencēts saskaņā ar MIT licenci. Skatiet [LICENSE](LICENSE) fail
 ---
 
 _Šis projekts nav saistīts ar Tezaurs.lv._
+
 
 
 
